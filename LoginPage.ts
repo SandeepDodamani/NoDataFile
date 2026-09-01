@@ -14,7 +14,7 @@ export class LoginPage {
   }
 
   async gotoLoginPage() {
-    await this.page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login', {
+    await this.page.goto('abc', {
       waitUntil: 'domcontentloaded',
     });
     await expect(this.usernameInput).toBeVisible();
